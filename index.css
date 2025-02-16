@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /* Терминальный шрифт */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background: black;
+    color: #00ff00;
+    text-align: center;
+    overflow: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+#welcomeScreen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: #00ff00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    z-index: 100;
+    transition: opacity 1s ease-in-out;
+}
+
+#confirmationModal, .retro-table {
+    width: 400px;
+    background: black;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #00ff00;
+    padding: 10px;
+}
+
+button {
+    background: #00ff00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #008000;
+}
+.hidden {
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    padding: 50px;
+}
+@keyframes running-text {
+    0% { transform: translateX(100%); opacity: 1; }
+    80% { transform: translateX(0); opacity: 1; }
+    90% { transform: translateX(-10%); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+#runningText {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: running-text 4s linear infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#whiteRabbit {
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff0000;
+    animation: blink 1.5s infinite;
+    display: block;
+    text-align: center;
+}

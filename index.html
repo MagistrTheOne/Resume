@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagistrTheOne - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Приветственное сообщение -->
+    <div id="welcomeScreen">
+        <p id="typingText"></p>
+    </div>
+
+    <!-- Модальное окно в виде консольной таблицы -->
+    <div id="confirmationModal">
+        <table>
+            <tr>
+                <th colspan="2">System Identification</th>
+            </tr>
+            <tr>
+                <td>Status:</td>
+                <td>Unknown</td>
+            </tr>
+            <tr>
+                <td>Access Level:</td>
+                <td>Restricted</td>
+            </tr>
+            <tr>
+                <td>Are you HR or Machines?</td>
+                <td>
+                    <button id="confirmHR">I am HR</button>
+                    <button id="confirmAI">I am AI bot</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Основной контент (изначально скрыт) -->
+    <div class="container hidden" id="content">
+        <header>
+            <h1>MagistrTheOne</h1>
+            <p>Junior Frontend Developer</p>
+        </header>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <table class="retro-table">
+                <tr>
+                    <th>Project</th>
+                    <th>Technology</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>AutobattleChessID</td>
+                    <td>React, TypeScript, Redux, Node.js</td>
+                    <td>In Development</td>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td>Vite, React, Tailwind</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>BHZ - FPS Game</td>
+                    <td>Unreal Engine 5</td>
+                    <td>In Development</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <table class="retro-table">
+                <tr>
+                    <th>Type</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:maxonyushko71@gmail.com">maxonyushko71@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td><a href="https://github.com/MagistrTheOne" target="_blank">github.com/MagistrTheOne</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://linkedin.com/in/magistrtheone" target="_blank">linkedin.com/in/magistrtheone</a></td>
+                </tr>
+            </table>
+        </section>
+        
+
+        <footer class="hidden" id="footer">
+            <table class="retro-table">
+                <tr>
+                    <td colspan="2"><span id="runningText">© 2025 MagistrTheOne. All rights reserved.</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/MagistrTheOne" target="_blank">GitHub</a></td>
+                    <td><a href="https://linkedin.com/in/magistrtheone" target="_blank">LinkedIn</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span id="whiteRabbit">White Rabbit See You...</span></td>
+                </tr>
+            </table>
+        </footer>
+        
+
+    <script src="index.js"></script>
+</body>
+</html>
